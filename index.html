@@ -1,0 +1,50 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de Vulnerabilidad</title>
+    <style>
+        body {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding: 50px;
+        }
+
+        .alerta {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 20px;
+            background: red;
+            color: white;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        marquee {
+            font-size: 18px;
+            font-weight: bold;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="alerta">⚠️ Prueba de Explotación ⚠️</h1>
+    <marquee behavior="scroll" direction="left">🚨 ¡Vulnerabilidad detectada! Este sitio podría haber robado datos de usuario.</marquee>
+
+    <script>
+        // Simulación de extracción de datos sin afectar usuarios reales
+        var userData = {
+            usuario: "UsuarioPrueba",
+            navegador: navigator.userAgent,
+            pagina: window.location.href
+        };
+
+        console.log("🔍 Datos simulados:", userData);
+
+        alert("⚠️ Esta página es un PoC de prueba de vulnerabilidad.");
+    </script>
+</body>
+</html>
